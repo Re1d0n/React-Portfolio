@@ -2,13 +2,12 @@ import React from "react";
 
 function Header() {
   return (
-    <Header>
+    <header>
       <h3>
-        Thanks for visiting my Portfolio. Feel free to contact me using the
-        contact info provided.
+        Kaia Innes
       </h3>
       
-    </Header>
+    </header>
   );
 }
 
