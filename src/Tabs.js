@@ -2,6 +2,9 @@ import { useState } from "react";
 import "./App.css";
 import image from "./images/IMG_7006.JPG";
 import resume from "./images/Resume.JPG";
+import docvault from "./images/docvault1.JPG";
+import dungeonforged from "./images/dungeonforged.JPG";
+import groupproject from "./images/groupproject.JPG";
 
 function Tabs() {
   const [toggleState, setToggleState] = useState(1);
@@ -73,24 +76,30 @@ function Tabs() {
           <hr />
           
           <p>
-            
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sed
-            nostrum rerum laudantium totam unde adipisci incidunt modi alias!
-            Accusamus in quia odit aspernatur provident et ad vel distinctio
-            recusandae totam quidem repudiandae omnis veritatis nostrum
-            laboriosam architecto optio rem, dignissimos voluptatum beatae
-            aperiam voluptatem atque. Beatae rerum dolores sunt.
+          <img src={docvault} width={400} height={300}/>
+          <img src={dungeonforged} width={400} height={300}/>
+          <img src={groupproject} width={400} height={300}/>
+             
           </p>
         </div>
         <div
           className={toggleState === 4 ? "content  active-content" : "content"}
         >
-          <h2>Content 4</h2>
+          <h2>Contact Me!</h2>
           <hr />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-            voluptatum qui adipisci.
-          </p>
+          <div name="contact" >
+        <form>
+            <div>
+                <p >Contact</p>
+                <p >You can contact me by sending me an email at: <span >reiduninnes@gmail.com</span></p>
+            </div>
+            <input type="text" placeholder='Name..' name='name'></input>
+            <input type="text" placeholder='yuhyuh.com' name='email' ></input>
+            <textarea name='message' rows="10" placeholder='Put you message here!' ></textarea>
+            <button >Send</button>
+        </form>
+
+    </div>
         </div>
       </div>
     </div>
